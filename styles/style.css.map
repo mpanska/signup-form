@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AGAA,AAAA,IAAI,CAAA;EACA,WAAW,EAAE,qBAAqB;EAClC,SAAS,EFMC,IAAI;CELjB",
+    "sources": [
+        "style.scss",
+        "_variables.scss",
+        "_mixins.scss",
+        "_globals.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
