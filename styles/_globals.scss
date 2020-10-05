@@ -1,0 +1,25 @@
+body{
+    background-image: url(/images/bg-intro-desktop.png);
+    background-color: $red;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: $defFontSize;
+
+    @include breakpoint-down(medium){
+        background-image: url(/images/bg-intro-mobile.png);
+        background-color: $red;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+h1{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: $red;
+}

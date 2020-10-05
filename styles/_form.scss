@@ -1,0 +1,29 @@
+main{
+    display: flex;
+    
+
+    .text{
+        color: white;
+        margin-top: 300px;
+        margin-left: 152px;
+    }
+
+    .form-area{
+        margin-right: 164px;
+
+        .form-heading{
+            background-color: $blue;
+            color: white;
+            border-radius: 10px;
+            margin-top: 120px;
+            padding: 18px 108px;
+        }
+
+        .sign-up{
+            background-color: white;
+            border-radius: 10px;
+        }
+    }
+
+    
+}
