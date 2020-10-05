@@ -5,10 +5,25 @@ body {
   background-repeat: no-repeat;
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 63.9375em) {
+  body {
+    background-image: url(/images/bg-intro-mobile.png);
+    background-color: #ff7a7a;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 h1 {
   color: white;
+}
+
+p {
+  margin: 0;
 }
 
 a {
@@ -18,28 +33,73 @@ a {
 
 main {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  main {
+    flex-direction: row;
+  }
 }
 
 main .text {
   color: white;
-  margin-top: 300px;
-  margin-left: 152px;
+  margin-top: 98px;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  main .text {
+    text-align: left;
+    margin-top: 18.75rem;
+    margin-left: 9.5rem;
+  }
+}
+
+main .text h1 {
+  margin-left: 56px;
+  margin-right: 56px;
+}
+
+main .text p {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 68px;
 }
 
 main .form-area {
-  margin-right: 164px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 main .form-area .form-heading {
   background-color: #6055a5;
   color: white;
-  border-radius: 10px;
-  margin-top: 120px;
-  padding: 18px 108px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  padding: 21px 76px;
+}
+
+main .form-area .form-heading .bold {
+  font-weight: 600;
 }
 
 main .form-area .sign-up {
   background-color: white;
   border-radius: 10px;
+}
+
+main .form-area .sign-up input {
+  border-radius: 8px;
+  border: #b9b6d3 1px solid;
+}
+
+main .form-area .sign-up .signup-btn {
+  background-color: #38cc8c;
+  border: none;
+  border-radius: 6px;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
