@@ -10,7 +10,7 @@ main{
     
     .text{
         color: white;
-        margin-top: 98px;
+        margin-top: 98px; //98px
         text-align: center;
 
         @include breakpoint-up(large){
@@ -42,8 +42,8 @@ main{
     }
 
     .form-area{
-        margin-left: 24px;
-        margin-right: 24px;
+        margin: 0px 24px 68px 24px;
+        
         @include breakpoint-up(large){
             //styles...
         }
@@ -53,7 +53,7 @@ main{
             color: white;
             border-radius: 6px;
             margin-bottom: 24px;
-            padding: 21px 76px;
+            padding: 21px 56px;
 
             @include breakpoint-up(large){
                 //styles...
@@ -67,15 +67,19 @@ main{
         .sign-up{
             background-color: white;
             border-radius: 10px;
-           // padding: 40px;
+            padding: 24px;
+
+            @include breakpoint-up(large){
+                //styles...
+            }
 
             input{
-                border-radius: 8px;
+                border-radius: 6px;
                 border: $grayishBlue 1px solid;
-                //width: 26.25rem;
-               // height: 3.375rem;
-
-               // margin-bottom: 20px;
+                font-weight: 600;
+                margin-bottom: 18px;
+                padding: 22px 0px 22px 20px;
+                width: 90%;
             }
 
             .signup-btn{
@@ -83,6 +87,20 @@ main{
                 border: none;
                 border-radius: 6px;
                 color: white;
+                font-weight: 600;
+                margin-bottom: 16px;
+                padding: 22px 0px 22px 0px;
+                text-transform: uppercase;
+                width: 100%;
+            }
+
+            .terms{
+                color:$grayishBlue;
+                font-size: 12px;
+            }
+
+            a{
+                font-weight: 600;
             }
         }
     }
