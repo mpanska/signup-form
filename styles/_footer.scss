@@ -1,0 +1,12 @@
+.attribution { 
+    background-color: #fff;
+    border-radius: 6px;
+    color: $grayishBlue;
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: 0;
+
+    &__link{ 
+        color: $red;
+    }
+}

@@ -15,27 +15,26 @@ main{
 
         @include breakpoint-up(large){
             text-align: left;
-            margin-top: 18.75rem; //300
+            margin-top: 0; //300
             margin-left: 9.5rem; //152
         }
    
         h1{
-            margin-left: 56px;
-            margin-right: 56px;
+           font-size: 30px;
  
             @include breakpoint-up(large){
-               // margin: 
+                margin-right: 56px;
                //margin-top: 94px;
             }
         }
         
         p{
-            margin-left: 40px;
-            margin-right: 40px;
+            margin-left: 16px;
+            margin-right: 16px;
             margin-bottom: 68px;
 
             @include breakpoint-up(large){
-                // margin: 
+                 margin:  0;
                 //margin-top: 94px;
             }
         }
@@ -45,7 +44,8 @@ main{
         margin: 0px 24px 68px 24px;
         
         @include breakpoint-up(large){
-            //styles...
+            margin-top: 120px;
+            margin-right: 165px;
         }
 
         .form-heading{
@@ -53,15 +53,16 @@ main{
             color: white;
             border-radius: 6px;
             margin-bottom: 24px;
-            padding: 21px 56px;
+            padding: 20px 50px;
 
             @include breakpoint-up(large){
-                //styles...
+                margin-top: 10px;
             }
 
             .bold{
                 font-weight: 600;
             }
+
         }
 
         .sign-up{
@@ -69,6 +70,7 @@ main{
             border-radius: 10px;
             padding: 24px;
 
+            
             @include breakpoint-up(large){
                 //styles...
             }
@@ -83,13 +85,15 @@ main{
             }
 
             .signup-btn{
+                box-shadow: 0px 5px 0px 0px rgb(46, 181, 122);
+
                 background-color: $green;
                 border: none;
                 border-radius: 6px;
                 color: white;
                 font-weight: 600;
                 margin-bottom: 16px;
-                padding: 22px 0px 22px 0px;
+                padding: 18px 0px;
                 text-transform: uppercase;
                 width: 100%;
             }
@@ -101,9 +105,14 @@ main{
 
             a{
                 font-weight: 600;
+                color: $red;
             }
         }
     }
 
     
+}
+
+.shadow{
+    box-shadow: 0px 8px 0px 0px rgba(0,0,0,0.12);
 }
