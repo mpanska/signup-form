@@ -110,16 +110,32 @@ main .form-area .form-heading .bold {
 }
 
 main .form-area .sign-up {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   border-radius: 10px;
   padding: 24px;
+}
+
+main .form-area .sign-up .error-text {
+  display: flex;
+  color: #ff7a7a;
+  font-style: italic;
+  font-size: 0.8em;
+  margin: 6px 6px 18px 0px;
+  justify-content: flex-end;
+}
+
+@media (max-width: 63.9375em) {
+  main .form-area .sign-up .error-text {
+    margin: 6px 14px 18px 0px;
+  }
 }
 
 main .form-area .sign-up input {
   border-radius: 6px;
   border: #b9b6d3 1px solid;
   font-weight: 600;
-  margin-bottom: 18px;
   padding: 22px 0px 22px 20px;
   width: 90%;
 }

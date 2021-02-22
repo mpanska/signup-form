@@ -38,6 +38,7 @@ main{
                 //margin-top: 94px;
             }
         }
+
     }
 
     .form-area{
@@ -66,20 +67,35 @@ main{
         }
 
         .sign-up{
+            display: flex;
+            flex-direction: column;
+
             background-color: white;
             border-radius: 10px;
             padding: 24px;
 
-            
             @include breakpoint-up(large){
                 //styles...
+            }
+            
+            .error-text{
+                display: flex;
+                color: $red;
+                font-style: italic;
+                font-size: 0.8em;
+                margin: 6px 6px 18px 0px;
+                justify-content: flex-end;
+
+                @include breakpoint-down(medium){
+                    margin: 6px 14px 18px 0px;
+                }
             }
 
             input{
                 border-radius: 6px;
                 border: $grayishBlue 1px solid;
                 font-weight: 600;
-                margin-bottom: 18px;
+                //margin-bottom: 18px;
                 padding: 22px 0px 22px 20px;
                 width: 90%;
             }
